@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ html, body{
+  font-family: "Sour Gummy", sans-serif;
+   scroll-behavior: smooth;
+   margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+} 
+
+body.dark-theme{
+  background-color: #272525;
+  color: #ffee00;;
+}
+
+ /* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}  */
+
+nav{
+  background: #ffffff; 
+  height: 80px;
+  width: 100%;
+  box-shadow: 4px 4px 4px rgb(245, 243, 239);
+  position: sticky;
+  top: 0;
+  z-index: 1;  
+  display: flex;
+}
+
+.logo{
+  color: black;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  margin-left: 10rem;
+  cursor: pointer;
+  
+} 
+/* 
+body.dark-theme {
+  background-color: #272525;
+  color: #ffee00;;
+} */
+
+ /*  nav ul{
+  float: right;
+  margin-right: 25%; 
+}  */ 
+ 
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  position: relative;
+}
+ 
+ nav ul li a{
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 4px;
+  position: relative;
+} 
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: #f81414;
+  transition: width 0.4s ease, transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+a.active{
+   
+  border-bottom: 2px solid #f81414;
+  transition: 0.3s;
+  
+} 
+
+.burg{
+  color: #f81414;
+  font-size: 70px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  color: black;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.theme-toggle  {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 0rem;
+ 
+  
+}
+
+.checkout-header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+   padding: 30px 150px;
+   position: sticky;
+   top: 0;
+
+
+}
+
+body.dark-theme .checkout-header{
+  background-color: #000000;
+ 
+}
+body.dark-theme nav ul li a{
+  color: #c0c0c0;
+ 
+} 
+
+
+.logos{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+body.dark-theme .logos{
+  color: #c0c0c0;
+ 
+} 
+
+.bur{
+  color: #f81414;
+  font-size: 60px;
+}
+
+body.dark-theme  .bur{
+  color: #ffee00;
+ 
+} 
+
+
+.checkout-and-lock{
+  margin-top: 30px;
+
+}
+
+.checkout{
+  margin-right: 200px;
+  font-size: 1.2rem;
+}
+
+.checkout-number{
+  color: #f81414;
+}
+
+body.dark-theme .checkout{
+  color: #c0c0c0;
+ 
+} 
+
+body.dark-theme .checkout-number{
+  color: #ffee00;
+}
+
+/* .header-content {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.checkout-header-left-section {
+  width: 150px;
+}
+
+.amazon-logo {
+  width: 100px;
+  margin-top: 12px;
+}
+
+.amazon-mobile-logo {
+  display: none;
+} */
+
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 575px or less, different
+   styles (inside the {...}) will be applied. */
+/* @media (max-width: 575px) {
+  .checkout-header-left-section {
+    width: auto;
+  }
+
+  .amazon-logo {
+    display: none;
+  }
+
+  .amazon-mobile-logo {
+    display: inline-block;
+    height: 35px;
+    margin-top: 5px;
+  }
+} */
+/* 
+.checkout-header-middle-section {
+  flex: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+}
+
+.return-to-home-link {
+  color: rgb(0, 113, 133);
+  font-size: 23px;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+.page-title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-left: 220px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+ 
+}
+
+.summary-both{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 70px;
+}
+
+
+.cart-item-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .cart-item-container {
+  background-color: #161515;;
+  color: #c0c0c0;
+}
+
+.delivery-date {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.delivery-option{
+  display: flex;
+  gap: 10px;
+}
+
+.cart-item-details-grid {
+ display: flex;
+ justify-content:space-between;
+ gap: 70px;
+/*  margin: 0px 80px; */
+}
+
+.product-description{
+  display: flex;
+  gap: 20px;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1em;
+  color: #d72323;
+  margin-bottom: 10px;
+}
+
+body.dark-theme .product-price {
+  color: #ffee00;
+}
+
+.product-quantity {
+  font-size: 1em;
+  color: #555;
+}
+
+.quantity-label {
+  font-weight: bold;
+}
+
+.update-quantity-link {
+  margin-left: 7px;
+  color: #555;;
+  cursor: pointer;
+}
+.delete-quantity-link {
+ color:#d72323; ;
+  cursor: pointer;
+}
+
+body.dark-theme .delete-quantity-link {
+  color: #fdec02da;
+}
+
+
+
+.update-quantity-link:hover {
+  text-decoration: none;
+  color: #5555558c;
+}
+
+body.dark-theme .update-quantity-link:hover {
+  color: #e6e6e6;
+}
+.delete-quantity-link:hover {
+  text-decoration: none;
+  color:#d7232391;
+}
+
+body.dark-theme .delete-quantity-link:hover {
+  color: #fdec02;
+}
+
+.update-quantity-input{
+  width: 30px;
+   display: none; 
+   padding: 0px 2px;
+}
+
+.save-quantity-button {
+  font-family:"Sour Gummy", sans-serif ;
+  margin-left: 2px;
+  font-size: 1.1em;
+  color: #555;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+   display: none; 
+}
+
+.save-quantity-button:hover {
+  text-decoration: none;
+  color: #5555558c;
+}
+
+
+.is-editing-quantity .update-quantity-input {
+  display: initial;
+}
+
+.is-editing-quantity .save-quantity-button {
+  display: initial;
+}
+
+.is-editing-quantity .quantity-label {
+  display: none;
+}
+.is-editing-quantity .update-quantity-link {
+  display: none;
+}
+ 
+
+
+  .payment-summary{
+  margin-top: 20px;
+  width: 350px;
+  height: 270px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}  
+
+body.dark-theme .payment-summary{ 
+  background-color: #161515;;
+  color: #c0c0c0;
+}
+ 
+
+.payment-summary-title{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-summary-row{
+  display: grid;
+  /* 1fr auto; means the width of the 2nd column will be
+     determined by the elements inside the column (auto).
+     The 1st column will take up the remaining space. */
+  grid-template-columns: 1fr auto;
+
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.place-order-button {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  margin-top: 11px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #f81414;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+body.dark-theme .place-order-button {
+  background-color: #ffee00;
+}
+.place-order-button:hover {
+  background-color: #f81414e7;
+  
+}
+
+body.dark-theme .place-order-button:hover {
+  background-color: #ffee00e7;
+}
+.subtotal-row .payment-summary-money {
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.total-row {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  font-size: 18px;
+  border-top: 1px solid rgb(222, 222, 222);
+  padding-top: 18px;
+}
+
+body.dark-theme .total-row {
+  color: #ffee00;
+}
+
+
+@media (max-width: 768px){
+
+  .checkout-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+     padding: 10px 40px;
+     position: sticky;
+     top: 0;
+  
+  }
+
+  .logos{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.bur{
+  color: #f81414;
+  font-size: 40px;
+}
+
+.checkout-and-lock{
+  margin-top: 20px;
+
+}
+
+.checkout{
+  margin-right: 70px;
+}
+
+
+
+  .summary-both{
+   flex-direction: column-reverse;
+   justify-self: center;
+   gap: 20px;
+  }
+
+  .cart-item-container {
+    max-width: 600px;
+   
+  }
+
+  .cart-item-details-grid {
+   flex-direction: column;
+    gap: 20px;
+   }
+    
+}

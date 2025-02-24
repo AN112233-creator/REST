@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp Form</title>
+  <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>SignUp</h2>
+      <form>
+        <div class="input-box input-box-username">
+          <span class="icon"><img src="Icons/icons8-user-24.png" alt=""></span>
+          <input type="text" id="username" required placeholder="">
+          <label for="username">Username</label>
+        </div>
+        <div class="input-box input-box-email">
+          <span class="icon"><img src="Icons/icons8-email-50.png" alt=""></span>
+          <input type="text" id="username" required placeholder="">
+          <label for="username">Email</label>
+        </div>
+        <div class="input-box input-box-password">
+          <span class="icon"> <img src="Icons/icons8-password-50.png" alt=""></span>
+          <input type="password" id="password" required placeholder="">
+          <label for="password">Password</label>
+          <span class="toggle-password js-toggle-password"><img src="Icons/icons8-invisible-50.png" alt="img" class="js-toggle-icon" id="toggle-icon"></span>
+        </div>
+        <div class="input-box input-box-password">
+          <span class="icon"> <img src="Icons/icons8-password-50.png" alt=""></span>
+          <input type="password" id="password-confirm" required placeholder="">
+          <label for="password">Confirm Password</label>
+          <span class="toggle-password js-toggle-password"><img src="Icons/icons8-invisible-50.png" alt="img" class="js-toggle-icon-confirm" id="js-toggle-icon-confirm"></span>
+        </div>
+        
+        <button type="submit" class="login-btn">SignUp</button>
+      </form>
+      <p class="paragraph">Or <span class="signup">Sign Up</span> Using</p>
+      <div class="social-icons">
+        <a href="#"><img src="Icons/icons8-apple-logo-50.png" alt="Apple"></a>
+        <a href="#"><img src="Icons/icons8-google-logo-48.png" alt="Google"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+   
+  document.querySelector('.js-toggle-icon').addEventListener('click', () =>{
+      togglePassword('password', 'toggle-icon');
+    })
+  document.querySelector('.js-toggle-icon-confirm').addEventListener('click', () =>{
+    togglePassword('password-confirm','js-toggle-icon-confirm' );
+
+    })
+
+
+  function togglePassword (passwordId, toggleIconId){
+      const passwordInput = document.getElementById(passwordId);
+      const toggleIcon = document.getElementById(toggleIconId);
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleIcon.src = 'Icons/icons8-blind-50.png'; // Change to "eye-closed" image
+      } else {
+        passwordInput.type = 'password';
+        toggleIcon.src = 'Icons/icons8-invisible-50.png'; // Change back to "eye-open" image
+      }
+    }
+
+  /* function togglePasswordConfirm (){
+      const passwordInput = document.getElementById('password-confirm');
+      const toggleIcon = document.getElementById('js-toggle-icon-confirm');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleIcon.src = 'Icons/icons8-blind-50.png'; // Change to "eye-closed" image
+      } else {
+        passwordInput.type = 'password';
+        toggleIcon.src = 'Icons/icons8-invisible-50.png'; // Change back to "eye-open" image
+      }
+    } */
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers Restaurant</title>
+    <link rel="icon" href="IMG/Fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/f7526775b5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navigation -->
+ <!--   <header> -->
+          <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <!-- <div class="cart-user">
+              <div class="cart">
+                <a href="">
+              <i class="fa-solid fa-cart-shopping"></i>
+               </a>
+              <i class="fa-solid fa-user"></i>
+              </div> 
+            </div> -->
+            <a href="index.html">
+            <label class="logo log">BUR<span class="burg">GER</span>S</label>
+              </a>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#professionals">TEAM</a></li>
+             <li><a href="#gallery">GALLERY</a></li>
+              <li><a href="#contact">CONTACT</a></li> 
+              <button id="toggle-theme" class="theme-toggle">🌙</button>
+            </ul>
+
+
+             <div class="cart-user">
+              <div class="cart">
+              <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+              </div>
+              <div class="user">
+                <a href="Login.html">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              </div>
+            </div>
+            <a href="cart.html">
+            <div class="cart-items js-cart-items-number"></div>
+            </a> 
+          </nav>
+          
+       <!--  </header> -->
+    
+        <!-- Main Content -->
+        
+        <section id="home" class="hero">
+            <div class="hero-content">
+              
+                <h1>ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla quis enim volutpat, at dolor nec aliquet.</p>
+                <a href="orders.html" class="btn">Our Dishes</a>
+            </div>
+            <div class="hero-image main-image">
+                <img  id="mainImage" class="my-image"  src="IMG/image 1.jpg" alt="Healthy Dish" width="400" height="400">
+
+                <div class="images">
+                  <img src="IMG/Image 1.jpg" alt="Healthy Dish" width="80" height="80" class="Image-gallery">
+                  <img src="IMG/Image.jpg" alt="Healthy Dish" width="80" height="80" class="Image-gallery">
+                  <img src="IMG/Image 2.jpg" alt="Healthy Dish" width="80" height="80" class="Image-gallery">
+                  <img src="IMG/Image 3.jpg" alt="Healthy Dish" width="80" height="80"  class="Image-gallery">
+                </div>
+            </div>
+        </section> 
+
+
+        <section id="professionals">
+        <h2>OUR <span class="prof">PROFESSIONAL </span>CHEFS</h2> 
+        <article class="profession">
+           <article id="profile1" class="card">
+            <figure>
+              <img src="IMG/CHEF 1.jpg" alt="Willmill" width="340" height="440">
+              <figcaption>Willy Mills</figcaption>
+            </figure>
+            <p>Assistant Chef</p>
+          </article>
+          <article id="Profile2" class="card">
+            <figure>
+              <img src="IMG/CHEF 2.jpg" alt="bakemathew" width="340" height="440">
+              <figcaption>Bake Mathew</figcaption>
+            </figure>
+            <p>Chef</p>
+          </article>
+          <article id="Profile3" class="card">
+            <figure>
+              <img src="IMG/CHEF 3.jpg" alt="Dbrooks" width="340" height="440">
+              <figcaption> D. Brooks<span class="nowrap"> Dev rel</span></figcaption>
+            </figure>
+            <p>Assistant Chef</p>
+          </article>
+        </article>
+      </section>
+
+        <section id="gallery">
+        <!-- Your additional content sections here -->
+        <h2>OUR <span class="prof">FOOD</span> GALLERY</h2> 
+
+         <div class="contains-all js-contains-all"> 
+        <div class="image-container">
+          <a href="orders.html">
+           <img src="IMG/pizza for work.jpg" alt="pizza1" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              PIZZA
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="orders.html">
+           <img src="IMG/burger main.jpg" alt="Mac and fries" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              BURGERS
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="image-container">
+            <a href="orders.html">
+           <img src="IMG/Steak.jpg" alt="steak" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              STEAK
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="orders.html">
+           <img src="IMG/fried chicken for work.jpg" alt="RICE" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              CHICKEN
+            </div>
+           </div>
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="orders.html">
+           <img src="IMG/sandwitch for work.jpg" alt="RICE" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              SANDWITCH
+            </div>
+           </div>
+          </a>
+        </div>
+       <!--  <div class="image-container">
+           <img src="IMG/buritos for work.jpg" alt="RICE" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              BURITOS
+            </div>
+           </div>
+        </div>
+        <div class="image-container">
+           <img src="IMG/buritos for work.jpg" alt="RICE" width="200" height="250">
+           <div class="overlay">
+            <div class="overlay-text">
+              BURITOS
+            </div>
+           </div>
+        </div>
+ -->
+      </div>
+    </section>
+
+    <section id="contact">
+
+      <h2>CONTACT <span class="prof">US</span></h2>
+      <div id="map"></div>
+
+      <form action="https://formspree.io/f/mbljkddp" method="post">
+        <div class="input-credents">
+        <input type="text" placeholder="Your Name" autocomplete="on" required class="name">
+        <input type="email" placeholder="Your Email" autocomplete="on" required>
+        </div>
+        <input type="text" placeholder="Subject" class="subject">
+        
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
+        <input type="submit" value="submit" class="send">
+        
+      </form>
+    </section>
+
+      <hr class="main-line"> 
+
+      <section class="footer">
+        <p class="foot">BURGERS</p>
+        <p class="small-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit incidunt cum consequuntur reprehenderit duci</p>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-skype"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <p> &copy; copyright <span class="citation">Andrews Naworagyere</span>. All Rights Reserved</p>
+        <p class="last"> <em>Designed by Andrews Wayne 2024</em></p>
+
+
+
+      </section>
+
+  
+
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="scripts-ALL/script.js" type="module"></script>
+      
+        
+    </body>
+    </html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+ <link rel="stylesheet" href="cart.css"> 
+ <link rel="icon" href="IMG/Fav.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/f7526775b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <!--  <nav class="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <a href="index.html">
+    <label class="logo log">BUR<span class="burg">GER</span>S</label>
+      </a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#professionals">TEAM</a></li>
+     <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#contact">CONTACT</a></li> 
+      <button id="toggle-theme" class="theme-toggle">🌙</button>
+    </ul>
+   
+  </nav>  -->
+
+  <div class="checkout-header">
+  <a href="index.html">
+    <label class="logos log">BUR<span class="bur">GER</span>S</label>
+   </a>
+   
+   <div class="checkout-and-lock checkout">
+    Checkout (<a class="js-cart-number-in-checkout checkout-number"
+      href="orders.html">3</a>)
+  </div>
+  <div class="checkout-and-lock">
+    <button id="toggle-theme" class="theme-toggle">🌙</button>
+  </div>
+</div>
+
+<div class="page-title">Review your order</div>
+ <!--  <div class="checkout-header js-checkout-header">
+     <div class="header-content">
+       <div class="checkout-header-left-section">
+         <a href="amazon.html">
+           <img class="amazon-logo" src="images/amazon-logo.png">
+           <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+         </a>
+       </div>
+
+       <div class="checkout-header-middle-section">
+         Checkout (<a class="return-to-home-link js-return-to-home-link"
+           href="amazon.html"></a>)
+       </div>
+
+       <div class="checkout-header-right-section">
+         <img src="images/icons/checkout-lock-icon.png">
+       </div>
+     </div> 
+   </div> -->
+
+    <div class="summary-both">
+      <div class="cart-items js-cart-items">
+  <div class="cart-item-container">
+    <div class="cart-item-details-grid">
+      <div class="product-description">
+      <img class="product-image"
+        src="IMG/pizza for work.jpg">
+      <div class="cart-item-details">
+        <div class="product-name">
+         PAPARONNI PIZZA
+        </div>
+        <div class="product-price">
+          $8.99
+        </div>
+        <div class="product-quantity">
+          <span>
+            Quantity: <span class="quantity-label">2</span>
+          </span>
+          <span class="update-quantity-link link-primary">
+            Update
+          </span>
+          <span class="delete-quantity-link link-primary">
+            Delete
+          </span>
+        </div>
+      </div>
+    </div>
+      <div class="delivery-options">
+        <div class="delivery-options-title">
+          Choose an option:
+        </div>
+        <div class="delivery-option">
+          <input type="radio" checked
+            class="delivery-option-input"
+            name="delivery-option-1">
+          <div>
+            <div class="delivery-option-date">
+              Pickup
+            </div>
+          </div>
+        </div>
+        <div class="delivery-option">
+          <input type="radio"
+            class="delivery-option-input"
+            name="delivery-option-1">
+          <div>
+            <div class="delivery-option-date">
+              Delivery
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-item-container">
+    <div class="cart-item-details-grid">
+      <div class="product-description">
+      <img class="product-image"
+        src="IMG/Steak.jpg">
+      <div class="cart-item-details">
+        <div class="product-name">
+         STEAK
+        </div>
+        <div class="product-price">
+          $12.99
+        </div>
+        <div class="product-quantity">
+          <span>
+            Quantity: <span class="quantity-label">1</span>
+          </span>
+          <span class="update-quantity-link link-primary">
+            Update
+          </span>
+          <span class="delete-quantity-link link-primary">
+            Delete
+          </span>
+        </div>
+      </div>
+    </div>
+
+      <div class="delivery-options">
+        <div class="delivery-options-title">
+          Choose an option:
+        </div>
+        <div class="delivery-option">
+          <input type="radio" checked
+            class="delivery-option-input"
+            name="delivery-option-2">
+          <div>
+            <div class="delivery-option-date">
+              Pickup
+            </div>
+          </div>
+        </div>
+        <div class="delivery-option">
+          <input type="radio"
+            class="delivery-option-input"
+            name="delivery-option-2">
+          <div>
+            <div class="delivery-option-date">
+              Delivery
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+
+ <!--  // payment summary -->
+
+
+ 
+ <div class="payment-summary js-payment-summary">
+  <!--   <div class="payment-summary-title"> 
+      Order Summary
+    </div>
+
+    <div class="payment-summary-row">
+      <div>Items (3):</div>
+      <div class="payment-summary-money">₵42.75</div>
+    </div>
+
+    <div class="payment-summary-row">
+      <div>Delivery &amp; handling:</div>
+      <div class="payment-summary-money">₵4.99</div>
+    </div>
+
+    <div class="payment-summary-row subtotal-row">
+      <div>Total before tax:</div>
+      <div class="payment-summary-money">₵47.74</div>
+    </div>
+
+    <div class="payment-summary-row">
+      <div>Estimated tax (10%):</div>
+      <div class="payment-summary-money">₵4.77</div>
+    </div>
+
+    <div class="payment-summary-row total-row">
+      <div>Order total:</div>
+      <div class="payment-summary-money">₵52.51</div>
+    </div>
+
+    <button class="place-order-button button-primary">
+      Place your order
+    </button> 
+  </div>  -->
+
+</div>
+  
+
+<script src="scripts-ALL/scripts-for-checkout/checkout.js" type="module"></script>
+</body>
+</html>
