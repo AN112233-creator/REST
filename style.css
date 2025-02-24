@@ -152,7 +152,6 @@ a.active{
 
  
 .cart-items{
-
    font-size: 18px;
    color: black;
    position: absolute;
@@ -745,7 +744,6 @@ body.dark-theme .citation{
     .images{
       margin-left: -10px;
     }
-    .btn {
 
     .btn {
       margin-bottom: 40px;
@@ -835,7 +833,7 @@ body.dark-theme .citation{
     .images{
       margin-left: -10px;
     }
-    .btn {
+    
 
     .btn {
       margin-bottom: 40px;
@@ -862,96 +860,96 @@ body.dark-theme .citation{
     
     
 }
+
+
 @media (max-width: 1024px){
-    .checkbtn{
+  .checkbtn{
     display:none;
 
-   }  
- 
+   } 
+  body.dark-theme nav{
+    background: #000000;
+    box-shadow: 4px 4px 4px rgb(37, 37, 36);
+  }
 
-      body.dark-theme nav{
-        background: #000000;
-        box-shadow: 4px 4px 4px rgb(37, 37, 36);
-       
-      
-      }
-      nav ul li{
-        display: inline-block;
-        
-        line-height: 80px;
-        margin: 0 5px;
-      }
-      
-
-      nav ul li a{
-       font-size: 20px;
- 
-      }
-      
- 
-      a:hover,a.active{
-       color: #1c1c31;
-      }
-      #check:checked~ul{
-       left: 0;
-      }
- 
-      label.logo{
-        color: black;
-        font-size: 30px;
-        line-height: 80px;
-        padding: 0px;
-        font-weight: bold;
-        margin-left: 40px;
-      }
-      .hero {
-        flex-direction: row;
-        text-align: center;
-    }
-
-    .hero-content, .hero-image {
-        max-width: 100%;
-    }
-    .hero-image img{
-      max-width: 400px;
-      max-height: 400px;
-    }
-
-    .images img{
-      max-width: 80px;
-      max-height: 80px;
-    }
-
-    .images{
-      margin-left: -10px;
-    }
-    .btn {
-
-    .btn {
-      margin-bottom: 40px;
-    }
-
-    .images{
-       margin-left: -40px; 
-    }
-
-    .profession {
-     flex-direction: column-reverse;
-     align-items: center;
-    }
-
-    .contains-all{
-      grid-template-columns: repeat(2, 100px);
-      grid-auto-rows: 120px;
-
-    }
-
-    .image-container .overlay-text{
-      font-size: 17px;
-    }
+  nav ul li{
+    display: inline-block;
     
-    
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+
+  nav ul li a{
+   font-size: 20px;
+
+  }
+  
+
+  a:hover,a.active{
+   color: #1c1c31;
+  }
+
+  #check:checked~ul{
+   left: 0;
+  }
+
+  label.logo{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0px;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  .hero {
+    flex-direction: row;
+    text-align: center;
 }
+
+.hero-content, .hero-image {
+    max-width: 100%;
+}
+.hero-image img{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.images img{
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.images{
+  margin-left: -10px;
+}
+
+.btn {
+  margin-bottom: 40px;
+}
+
+.images{
+   margin-left: -40px; 
+}
+
+.profession {
+ flex-direction: column-reverse;
+ align-items: center;
+}
+
+.contains-all{
+  grid-template-columns: repeat(2, 100px);
+  grid-auto-rows: 120px;
+
+}
+
+.image-container .overlay-text{
+  font-size: 17px;
+}
+ 
+}
+   
 @media (max-width: 856px){
   .checkbtn{
     display: block;
@@ -1200,12 +1198,28 @@ body.dark-theme .citation{
  
       label.logo{
         color: black;
-        font-size: 30px;
+        font-size: 24px;
         line-height: 80px;
         padding: 0px;
         font-weight: bold;
         margin-left: 40px;
       }
+
+      .burg{
+        font-size: 24px;
+      }
+
+      .hero-content h1{
+        font-size: 24px;
+      }
+      .cart-items{
+        position: absolute;
+        top:12%;
+        left:63%;
+        z-index: 4000px;
+      
+     
+     }
       .hero {
         flex-direction: column;
         text-align: center;
@@ -1250,6 +1264,13 @@ body.dark-theme .citation{
     .image-container .overlay-text{
       font-size: 14px;
     }
+
+    #map {
+      height: 200px; 
+      width: 85%; 
+     
+    
+    }
     form .input-credents{
       display: flex;
       flex-direction: column;
@@ -1257,10 +1278,14 @@ body.dark-theme .citation{
       
      
     }
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     form .input-credents input{
-      max-width: 50%;
+      max-width: 70%;
       
-     
     }
     
     
