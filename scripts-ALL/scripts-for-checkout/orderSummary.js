@@ -162,7 +162,7 @@ import { deliveryOptions } from "../../data/delivery-options.js";
   document.querySelectorAll('.js-delivery-option').forEach((element) => {
    element.addEventListener('click', () => {
 
-    console.log('hello')
+    
    const foodId = element.dataset.foodId
    const deliveryOptionId = element.dataset.deliveryOptionId
   
