@@ -18,7 +18,7 @@
  cart.forEach((cartItem) => { 
   const food = getFood(cartItem.productId)
   
-  foodPriceCents += food.priceCents*cartItem.quantity
+   foodPriceCents += food.priceCents*cartItem.quantity 
 
     let deliveryOption;
 
@@ -28,7 +28,7 @@
      }
    }) 
 
-   deliveryPriceCents += deliveryOption.priceCents
+  /*  deliveryPriceCents += deliveryOption.priceCents */
 
    totalBeforeTaxCents = foodPriceCents + deliveryPriceCents
 
