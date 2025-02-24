@@ -28,7 +28,7 @@
      }
    }) 
 
-  /*  deliveryPriceCents += deliveryOption.priceCents */
+    deliveryPriceCents += deliveryOption.priceCents 
 
    totalBeforeTaxCents = foodPriceCents + deliveryPriceCents
 
