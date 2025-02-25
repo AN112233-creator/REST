@@ -183,3 +183,63 @@ body {
  color: rgb(253, 24, 24);
  transition: 0.4s ease;
 } 
+
+@media (max-width: 414px){
+  .checkbtn{
+    display: block;
+   }
+   ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background-color:  #ffffff;
+     text-align: center;
+     top: 80px;
+     left: -100%;
+     transition: all 0.5s ;
+     z-index: 1;
+   }
+   
+      nav ul li{
+       display: block;
+       margin:50px;
+       line-height: 30px;
+ 
+      }
+      nav ul li a{
+       font-size: 20px;
+ 
+      }
+      
+ 
+      a:hover,a.active{
+       color: #1c1c31;
+      }
+      #check:checked~ul{
+       left: 0;
+      }
+ 
+      label.logo{
+        color: black;
+        font-size: 24px;
+        line-height: 80px;
+        padding: 0px;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+      .burg{
+        font-size: 24px;
+      }
+
+      .container {
+        max-width: 350px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      
+      }
+
+      
+    
+}

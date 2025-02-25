@@ -477,18 +477,6 @@ body.dark-theme .card p{
 }
 
 
-/* .hidden {
-  opacity: 0;
-  transform: scale(0.5);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.visible {
-  opacity: 1;
-  transform: scale(1);
-} */
-
-
 
 @keyframes myAppear{
   0%{ transform: scale(0.0)}
@@ -621,7 +609,6 @@ body.dark-theme form .input-credents input {
 }
 form textarea {
   background-color: #ffffff;
-
   width:75% ;
   height: 200px;
   padding: 10px;
@@ -634,7 +621,6 @@ body.dark-theme form textarea {
 }
 form .subject {
   background-color: #ffffff;;
-
   width:75% ;
   height: 40px;
   padding: 10px;
@@ -1263,10 +1249,17 @@ body.dark-theme .citation{
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 10px;
+      width: 85%;
+      height: 300px;
     }
     form .input-credents input{
       max-width: 70%;
       
+    }
+    form .subject {
+      background-color: #ffffff;;
+      max-width: 80%;
     }
     
     
